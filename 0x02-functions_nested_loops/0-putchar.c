@@ -1,19 +1,17 @@
-#include "holberton.h"
-
 /**
- * main - Entry point
- * Return:0
- */
+ *  * _isupper - check if c is upper
+ *   *
+ *    * @c: input for alphabet
+ *     *
+ *      * Return: 1 if its uppercase, 0 if not
+ *      */
 
-int main(void)
+int _isupper(int c)
 {
-char c[10] = "_putchar";
-int i = 0;
-while (i < 9)
-{
-_putchar(c[i]);
-i++;
+		if (c >= 65 && c <= 90)
+					return (1);
+			else
+						return (0);
 }
-_putchar('\n');
-return (0);
-}
+Footer
+
