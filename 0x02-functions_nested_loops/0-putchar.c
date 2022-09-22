@@ -1,17 +1,21 @@
+#include"main.h"
+
 /**
- *  * _isupper - check if c is upper
- *   *
- *    * @c: input for alphabet
- *     *
- *      * Return: 1 if its uppercase, 0 if not
- *      */
+ * main - Entry point
+ *
+ * Description: prints _putchar using putchar prototype
+ *
+ * Return: Always 0 (Success)
+*/
 
-int _isupper(int c)
+int main(void)
 {
-		if (c >= 65 && c <= 90)
-					return (1);
-			else
-						return (0);
-}
-Footer
+	char str[] = "_putchar";
+	int ch;
 
+	for (ch = 0; ch < 8; ++ch)
+		_putchar(str[ch]);
+	_putchar('\n');
+
+	return (0);
+}
